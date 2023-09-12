@@ -1,9 +1,20 @@
+// id
 let h1Elem = document.getElementById("title");
+console.log(h1Elem);
 
-//گرفتن اتریبیوت
-console.log(h1Elem.getAttribute("align"));
-h1Elem.setAttribute("class", "js-text");
+//class  => giv us array
+let liElems = document.getElementsByClassName("list-item");
+console.log(liElems[2]);
 
-// giv attribute to one element
-let h2Elem = document.getElementsByClassName("list-item");
-console.log(h2Elem[0].setAttribute("id", "element"));
+// tag name
+let Items = document.getElementsByTagName("li");
+console.log(Items);
+
+// query selector  =>  first element
+let firstListItem = document.querySelector(".list-item");
+console.log(firstListItem);
+
+
+// all elements
+let elements = document.querySelectorAll(".list-item");
+console.log(elements);
