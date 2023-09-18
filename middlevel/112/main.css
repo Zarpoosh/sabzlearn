@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+input{
+    margin: 1rem;
+}
+#btn{
+    background:rgb(17, 201, 17);
+    width: 100%;
+}
+.modal{
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 3rem;
+    display: none;
+
+}
+.passinputValid , .userinputValid{
+    /* color: red/; */
+    display: none;
+}

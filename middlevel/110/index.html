@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="modal"> </div>
+    <form action="">
+      <input
+        id="username"
+        autocomplete="username"
+        placeholder="enter you'r userName"
+      />
+      <input
+        id="password"
+        type="password"
+        placeholder="enter your password"
+        required
+        autocomplete="current-password"
+      />
+      <button onclick="dataValidation()" id="btn">submit</button>
+      <p class="message">Not Regestered? <a href="#">creat an account</a></p>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

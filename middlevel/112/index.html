@@ -7,33 +7,26 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <div class="modal"> </div>
+    <div class="modal"></div>
     <form action="">
-      <!-- <input
-      onkeypress="keyLog()"
-        id="username"
-        autocomplete="username"
-        placeholder="enter you'r userName"
-      /> -->
-      <!-- <input
-      onkeydown="keyLog()"
-        id="username"
-        autocomplete="username"
-        placeholder="enter you'r userName"
-      /> -->
       <input
-      onkeyup="keyLog()"
+        onkeydown="userValidation()"
         id="username"
         autocomplete="username"
         placeholder="enter you'r userName"
       />
+      <span class="userinputValid"></span>
+
+      <!-- ------------------- -->
       <input
+        onkeydown="passValidation()"
         id="password"
         type="password"
         placeholder="enter your password"
         required
         autocomplete="current-password"
       />
+      <span class="passinputValid"> </span>
       <button id="btn">submit</button>
       <p class="message">Not Regestered? <a href="#">creat an account</a></p>
     </form>
