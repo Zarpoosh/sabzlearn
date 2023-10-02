@@ -14,16 +14,16 @@ function convert() {
     result.style.color = "red";
   } else {
     if (firstValue.value === "C") {
-      // console.log("farenhight1");
-      let farenhight1 = inputBox.value * 1.8 + 32;
+      // console.log("resultValue");
+      let resultValue = inputBox.value * 1.8 + 32;
       result.innerHTML =
-        inputBox.value + " C to " + farenhight1.toFixed(2) + " F ";
+        inputBox.value + " C to " + resultValue.toFixed(2) + " F ";
       result.style.color = "green";
     } else {
       // console.log("object")
-      let farenhight1 = ((inputBox.value - 32) * 5) / 9;
+      let resultValue = ((inputBox.value - 32) * 5) / 9;
       result.innerHTML =
-        inputBox.value + " F to " + farenhight1.toFixed(2) + " C ";
+        inputBox.value + " F to " + resultValue.toFixed(2) + " C ";
       result.style.color = "green";
     }
   }
