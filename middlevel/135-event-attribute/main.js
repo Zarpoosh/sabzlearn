@@ -8,8 +8,8 @@ logBtn.addEventListener("click", function (event) {
 });
 
 userNameInput.addEventListener("keydown", function (event) {
-  console.log(event.target);
+  // console.log(event.target);
   console.log(event.key);
-  console.log(event);
-  event.key === "Enter" ? alert("enter clicked") : alert("its not enter");
+  // console.log(event);
+  // event.key === "Enter" ? alert("enter clicked") : alert("its not enter");
 });
