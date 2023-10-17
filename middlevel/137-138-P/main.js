@@ -9,6 +9,7 @@ let btn = $.getElementById("btn");
 let input = $.getElementById("input");
 
 textInput.addEventListener("keydown", function (event) {
+  event.preventDefault();
   keyBox.innerHTML = event.key;
   locationBox.innerHTML = event.location;
   typeBox.innerHTML = event.type;
