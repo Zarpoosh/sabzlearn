@@ -42,3 +42,19 @@ i {
   cursor: pointer;
   margin-left: auto;
 }
+
+@media only screen and (max-width: 400px) {
+  input {
+    width: 15rem;
+    justify-content: center;
+  }
+  ul li {
+    width: 15rem;
+  }
+}
+h1 {
+  position: fixed;
+  top: 2rem;
+  font-size: 3rem;
+  color: blue;
+}
