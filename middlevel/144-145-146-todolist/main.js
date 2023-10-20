@@ -15,12 +15,16 @@ function addNewTodo(newTodoValue) {
   let newTrash = $.createElement("i");
   newTrash.className = "fas fa-trash mx-2";
 
+  newTrash.addEventListener("click", function (event) {
+    event.target.parentElement.remove();
+  });
+
   //   append
   newTodoLi.append(newTodoTitleSpan, newTrash);
 
-    // todoList.append(newTodoLi);
+  todoList.append(newTodoLi);
 
-  //   console.log(newTodoLi);
+  console.log(newTodoLi);
 }
 
 addTodoForm.addEventListener("submit", function (event) {
@@ -29,13 +33,13 @@ addTodoForm.addEventListener("submit", function (event) {
 
 inputElem.addEventListener("keydown", function (event) {
   let newTodoValue = event.target.value.trim();
-//   console.log(newTodoValue)
+  // console.log(newTodoValue);
   // console.log(event);
 
   if (event.keyCode === 13) {
     if (newTodoValue) {
       inputElem.value = "";
-      addNewTodo();
+      addNewTodo(newTodoValue);
     }
   }
 });
