@@ -1,25 +1,41 @@
-let $=document;
-let listItem=$.querySelectorAll("#list-item");
-let addBtn=$.getElementById("add-btn");
-let removeBtn=$.querySelectorAll(".remove-btn");
-let list=$.getElementById("list")
+let $ = document;
+let inputElem = $.querySelector("input");
+let addTodoForm = $.querySelector(".add");
+let todoList = $.querySelector(".list-group");
 
-// listItem.forEach(function(li){
-//     li.addEventListener("click" , function(event){
-//         event.target.parentElement.remove()    
-//     })
+function addNewTodo(newTodoValue) {
+  // create a new li
+  let newTodoLi = $.createElement("li");
+  newTodoLi.className = "list-item";
 
-// })
-removeBtn.addEventListener("click" , function(event){
-    event.target.parentElement.remove()    
-})
+  //   create a new span
+  let newTodoTitleSpan = $.createElement("span");
+  newTodoTitleSpan.innerHTML = newTodoValue;
+  //    create a new i
+  let newTrash = $.createElement("i");
+  newTrash.className = "fas fa-trash mx-2";
 
+  //   append
+  newTodoLi.append(newTodoTitleSpan, newTrash);
 
+    // todoList.append(newTodoLi);
 
-  
+  //   console.log(newTodoLi);
+}
 
-addBtn.addEventListener("click" , function(){
-    console.log("add")
-})
+addTodoForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
 
+inputElem.addEventListener("keydown", function (event) {
+  let newTodoValue = event.target.value.trim();
+//   console.log(newTodoValue)
+  // console.log(event);
 
+  if (event.keyCode === 13) {
+    if (newTodoValue) {
+      inputElem.value = "";
+      addNewTodo();
+    }
+  }
+});

@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
+    <!-- ----------icon-------------- -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <!-- -----------css -------------- -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
     <div class="container">
-        <ul class="list-group">
-            <li class="list-item">
-                <span>react</span>
-                <button class="remove-btn">delete</button>
-            </li>
-            <li class="list-item">
-                <span>javascript</span>
-                <button class="remove-btn">delete</button>
-            </li>
-            <li class="list-item">
-                <span>htmlcss</span>
-                <button class="remove-btn">delete</button>
-            </li>
-        </ul>
-        <div class="add-text">
-            <input type="text" placeholder="write your todo...">
-            <button id="add-btn">add task</button>
-        </div>
+      <!-- ----------list ----------- -->
+      <ul class="list-group">
+        <li class="list-item">
+          <span>react</span>
+           <i class="fas fa-trash mx-2"></i>
+        </li>
+        <li class="list-item">
+          <span>javascript</span>
+           <i class="fas fa-trash mx-2"></i>
+        </li>
+        <li class="list-item">
+          <span>htmlcss</span>
+           <i class="fas fa-trash mx-2"></i>
+        </li>
+      </ul>
+      <!-- ---------form ---------- -->
+      <form class="add">
+        <label class="text-light">Add New Todo...</label>
+        <input type="text" class="form-control" name="add" placeholder="write your todo..." />
+      </form>
     </div>
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
