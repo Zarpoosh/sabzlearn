@@ -1,23 +1,44 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    margin-top: 20rem;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+  background: #09204b7e;
 }
-form{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.3rem;
 }
-input{
-    outline: none;
-    padding: 0.4rem;
-    border: 2px solid blue;
-    border-radius: 0.3rem;
-    width: 23rem;
-    margin-top: 1rem;
+input {
+  outline: none;
+  padding: 0.4rem;
+  border: 2px solid blue;
+  border-radius: 0.3rem;
+  width: 23rem;
+  margin-top: 1rem;
 }
-label{
+label {
+  color: blue;
+  font: bold;
+}
 
+ul {
+  text-decoration: none;
+}
+ul li {
+  width: 23rem;
+  background: rgba(0, 0, 255, 0.541);
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+i {
+  cursor: pointer;
+  margin-left: auto;
 }
