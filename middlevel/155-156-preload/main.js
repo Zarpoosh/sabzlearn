@@ -7,5 +7,5 @@ window.addEventListener("load", function(){
 
 
     // secondway
-    // loaderElem.className +=' hidden';
+    loaderElem.className +='hidden';
 })
