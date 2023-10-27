@@ -1,0 +1,51 @@
+
+#ball{
+    background-color: rgb(255, 107, 132);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: anime 3s linear infinite  alternate;
+
+}
+.container{
+    /* display: none; */
+    margin-top:200px ;
+    margin-left: 200px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid blue;
+}
+@keyframes anime{
+    0%{
+        background: #ff0000;
+       left: 0px;
+       top: 0px;
+    }
+    25%{
+        background: #00f300;
+        left: 100px;
+        top: 0px;
+    }
+    50%{
+        background: #00c3ff;
+        left: 100px;
+        top: 100px;
+    }
+    75%{
+        background: #4400ff;
+        left: 0px;
+        top: 100px;
+    }
+    100%{
+        background: #c300ff;
+       left: 0px;
+       top: 0px;
+    }
+}
+
+.hidden{
+    animation: fadOut 1s;
+    animation-fill-mode:space-evenly ;
+    display: none;
+}

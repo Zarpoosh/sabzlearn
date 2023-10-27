@@ -14,6 +14,7 @@ let cities = [
 
 searchBtn.addEventListener("click", function () {
   let serarchBarValue = inputBox.value;
+  // console.log(serarchBarValue)
   let mainCityData = cities.find(function (item) {
     return item.city === serarchBarValue;
   });
@@ -30,3 +31,10 @@ searchBtn.addEventListener("click", function () {
     alert("اطلاعات درستی وارد کنید .");
   }
 });
+// if (serarchBarValue= "") {
+//   $.querySelector(".city").innerHTML = "";
+//   $.querySelector(".temp").innerHTML = "";
+//   $.querySelector(".weather").innerHTML = "";
+//   $.querySelector(".humidy").innerHTML = "";
+//   $.querySelector(".windspeed").innerHTML = "";
+// }
