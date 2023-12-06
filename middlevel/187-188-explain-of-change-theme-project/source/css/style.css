@@ -44,7 +44,7 @@ header {
   justify-content: flex-end;
   padding: 30px;
 }
-
+/* ************************************************۸ */
 .switch {
   width: 80px;
   height: 40px;
@@ -88,7 +88,7 @@ header {
 .dark > * {
   color: rgb(255, 255, 255);
 }
-
+/* ***************************************۸ */
 .main {
   height: 80vh;
   display: flex;
