@@ -45,8 +45,7 @@ allProducts.forEach(function (product) {
     // productContainer.append(productTitleSpan, productImageElem, productDetailsContainer)
     // shopItemsContainer.append(productContainer)
 
-    shopItemsContainer.insertAdjacentHTML("beforeend" , 
-    '<div class="shop-item"><><span class="shop-item-title">'+product.title+'</span><img class="shop-item-image" src="'+product.src +'"><div class="shop-item-details"><span class="shop-item-price">'+product.price+'</span><button class="btn btn-primary shop-item-button">ADD TO CART</button></div></div>')
+    shopItemsContainer.insertAdjacentHTML("beforeend" , '<div class="shop-item"><span class="shop-item-title">'+product.title+'</span><img class="shop-item-image" src="' + product.img +'"><div class="shop-item-details"><span class="shop-item-price">'+product.price+'</span><button onclick="addProductToBasketArray('+ product.id+')" class="btn btn-primary shop-item-button">ADD TO CART</button></div></div>')
 
 })
 
