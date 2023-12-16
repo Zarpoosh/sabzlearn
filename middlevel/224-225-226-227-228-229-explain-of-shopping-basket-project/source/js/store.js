@@ -110,6 +110,7 @@ function basketProductsGenerator (userBasketArray) {
         basketProductRemoveBtn.innerHTML = 'Remove'
         basketProductRemoveBtn.addEventListener("click" , function(){
             removeProductFromBasket(product.id)
+            calculateTotalPrice(userBasket)
         })
 
         basketProductInputsContainer.append(basketProductInput, basketProductRemoveBtn)
@@ -127,12 +128,13 @@ function removeProductFromBasket(productId){
         return product.id!=productId
     })
     basketProductsGenerator(userBasket)
-    calculateTotalPriceAfterRemove(userBasket)
+    // calculateTotalPriceAfterRemove(userBasket)
     console.log(userBasket);
 }
 removeAllProducts.addEventListener("click" ,function(){
     userBasket=[]
     basketProductsGenerator(userBasket)
+    calculateTotalPrice(userBasket)
 })
 
 function calculateTotalPrice(userBasketArray){
@@ -142,13 +144,13 @@ function calculateTotalPrice(userBasketArray){
     })
     cartTotalPrice.innerHTML=totalPriceValue
 }
-function calculateTotalPriceAfterRemove(userBasketArray){
-    let totalPriceValue=0
-    userBasketArray.forEach(function(product){
-        totalPriceValue-=-(product.count* product.price)
-    })
-    cartTotalPrice.innerHTML=totalPriceValue
-}
+// function calculateTotalPriceAfterRemove(userBasketArray){
+//     let totalPriceValue=0
+//     userBasketArray.forEach(function(product){
+//         totalPriceValue-=-(product.count* product.price)
+//     })
+//     cartTotalPrice.innerHTML=totalPriceValue
+// }
 function updateProductCount(productId , newCount){
     console.log("productId:"+productId+"newCount:"+ newCount);
     userBasket.forEach(function(product){
