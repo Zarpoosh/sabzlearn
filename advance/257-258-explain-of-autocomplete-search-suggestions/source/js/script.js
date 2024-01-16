@@ -1,5 +1,4 @@
 const $ = document;
-
 const autoCompletewrapper = $.querySelector(".search-input");
 const searchInputElem = $.querySelector("input");
 const autoCompletBox = $.querySelector(".autocom-box");
@@ -33,7 +32,7 @@ function suggestionWordsGenerator(wordArray){
   console.log(listItemsArray);
 
   let customeListItem; 
-  if (listItemsArray.length) {
+  if (!listItemsArray.length) {
     customeListItem = '<li>' + searchInputElem.value + '</li>';
   } else {
     customeListItem = listItemsArray.join("");
@@ -42,7 +41,7 @@ function suggestionWordsGenerator(wordArray){
 
   autoCompletBox.innerHTML=customeListItem
   select()
-  console.log(customeListItem);
+  // console.log(customeListItem);
 }
 
 
