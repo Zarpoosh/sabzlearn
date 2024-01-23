@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background: #644bff;
   padding: 0 20px;
 }
 
-::selection{
+::selection {
   color: #fff;
-  background: #664AFF;
+  background: #664aff;
 }
 
-.wrapper{
+.wrapper {
   max-width: 450px;
   margin: 150px auto;
 }
 
-.wrapper .search-input{
+.wrapper .search-input {
   background: #fff;
   width: 100%;
   border-radius: 5px;
   position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
 }
 
-.search-input input{
+.search-input input {
   height: 55px;
   width: 100%;
   outline: none;
@@ -37,14 +37,14 @@ body{
   border-radius: 5px;
   padding: 0 60px 0 20px;
   font-size: 18px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.search-input.active input{
+.search-input.active input {
   border-radius: 5px 5px 0 0;
 }
 
-.search-input .autocom-box{
+.search-input .autocom-box {
   padding: 0;
   opacity: 0;
   pointer-events: none;
@@ -52,13 +52,13 @@ body{
   overflow-y: auto;
 }
 
-.search-input.active .autocom-box{
+.search-input.active .autocom-box {
   padding: 10px 8px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.autocom-box li{
+.autocom-box li {
   list-style: none;
   padding: 8px 12px;
   display: none;
@@ -67,14 +67,14 @@ body{
   border-radius: 3px;
 }
 
-.search-input.active .autocom-box li{
+.search-input.active .autocom-box li {
   display: block;
 }
-.autocom-box li:hover{
+.autocom-box li:hover {
   background: #efefef;
 }
 
-.search-input .icon{
+.search-input .icon {
   position: absolute;
   right: 0px;
   top: 0px;

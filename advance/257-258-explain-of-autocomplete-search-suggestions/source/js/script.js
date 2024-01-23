@@ -14,7 +14,6 @@ searchInputElem.addEventListener("keyup", function () {
       return word.toLowerCase().startsWith(searchValue.toLowerCase());
     });
 
-
     suggestionWordsGenerator(filteredWords);
 
     console.log(filteredWords);
@@ -23,34 +22,31 @@ searchInputElem.addEventListener("keyup", function () {
   }
 });
 
-
-function suggestionWordsGenerator(wordArray){
-  let listItemsArray=wordArray.map(function(word){
-    return '<li>' +word+ '</li>'
-  })
+function suggestionWordsGenerator(wordArray) {
+  let listItemsArray = wordArray.map(function (word) {
+    return "<li>" + word + "</li>";
+  });
 
   console.log(listItemsArray);
 
-  let customeListItem; 
+  let customeListItem;
   if (!listItemsArray.length) {
-    customeListItem = '<li>' + searchInputElem.value + '</li>';
+    customeListItem = "<li>" + searchInputElem.value + "</li>";
   } else {
     customeListItem = listItemsArray.join("");
   }
 
-
-  autoCompletBox.innerHTML=customeListItem
-  select()
+  autoCompletBox.innerHTML = customeListItem;
+  select();
   // console.log(customeListItem);
 }
 
-
-function select(){
-  let allListItems = autoCompletBox.querySelectorAll("li")
-  allListItems.forEach(function(wordItem){
-    wordItem.addEventListener("click", function(event){
-      searchInputElem.value=event.target.textContent
+function select() {
+  let allListItems = autoCompletBox.querySelectorAll("li");
+  allListItems.forEach(function (wordItem) {
+    wordItem.addEventListener("click", function (event) {
+      searchInputElem.value = event.target.textContent;
       autoCompletewrapper.classList.remove("active");
-    })
-  })
+    });
+  });
 }

@@ -5,4 +5,3 @@ var hasProfile = false;
 //     alert("please opload a profile");
 //   }
 // }, 5000);
-

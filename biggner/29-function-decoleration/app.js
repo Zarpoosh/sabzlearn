@@ -7,4 +7,4 @@ function showValue() {
 }
 
 // calling
-showValue()
+showValue();

@@ -1,6 +1,6 @@
-:root{
-    --test-color:red;
+:root {
+  --test-color: red;
 }
-h1{
-    color: var(--test-color);
+h1 {
+  color: var(--test-color);
 }

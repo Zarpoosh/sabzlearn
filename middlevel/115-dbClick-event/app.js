@@ -1,3 +1,3 @@
-function dbclickEvent(){
-    console.log("clicked")
+function dbclickEvent() {
+  console.log("clicked");
 }

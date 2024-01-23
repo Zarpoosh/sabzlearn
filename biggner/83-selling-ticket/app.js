@@ -6,7 +6,7 @@ var cities = {
 };
 var startProvine = prompt("enter the rprovine: ");
 
-var mainprovinecities=cities[startProvine]
-mainprovinecities.forEach(function(city){
-    console.log(city)
+var mainprovinecities = cities[startProvine];
+mainprovinecities.forEach(function (city) {
+  console.log(city);
 });

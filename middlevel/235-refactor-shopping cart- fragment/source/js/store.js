@@ -47,7 +47,7 @@ allProducts.forEach(function (product) {
   productContainer.append(
     productTitleSpan,
     productImageElem,
-    productDetailsContainer
+    productDetailsContainer,
   );
   // shopItemsContainer.append(productContainer)
   productFragment.appendChild(productContainer);
@@ -95,7 +95,7 @@ function basketProductsGenerator(userBasketArray) {
 
     basketProductDetailsContainer.append(
       basketProductImg,
-      basketProductTitleSpan
+      basketProductTitleSpan,
     );
 
     let basketProductPriceSpan = $.createElement("span");
@@ -122,13 +122,13 @@ function basketProductsGenerator(userBasketArray) {
 
     basketProductInputsContainer.append(
       basketProductInput,
-      basketProductRemoveBtn
+      basketProductRemoveBtn,
     );
 
     basketProductContainer.append(
       basketProductDetailsContainer,
       basketProductPriceSpan,
-      basketProductInputsContainer
+      basketProductInputsContainer,
     );
 
     bastekProductsContainer.append(basketProductContainer);

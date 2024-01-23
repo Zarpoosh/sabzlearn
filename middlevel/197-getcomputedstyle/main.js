@@ -4,14 +4,11 @@ const boxElem = document.querySelector("div");
 console.log(boxElem.style.fontSize);
 console.log(boxElem.style.width); //empty becouse external
 
-
-
 //** */ How??
 let boxElemstyles = getComputedStyle(boxElem);
-console.log(boxElemstyles.width)
+console.log(boxElemstyles.width);
 console.log(boxElemstyles);
-
 
 //قدیمیه
 let boxElemWidth = getComputedStyle(boxElem).getPropertyValue("width");
-console.log(boxElemWidth)
+console.log(boxElemWidth);

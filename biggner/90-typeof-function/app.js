@@ -10,9 +10,9 @@
 //     alert("hello")
 //  })()
 
- ////////////////////////////////////////////
- 
- // IIEF function => itself run
+////////////////////////////////////////////
+
+// IIEF function => itself run
 //  (function(){
 //     alert("hello")
 //  }())

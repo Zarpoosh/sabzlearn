@@ -1,23 +1,23 @@
-body{
-    display: flex;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+body {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-#input{
-    justify-content: center;
-    margin-top: 10rem;
-    outline: none;
-    border: 2px solid rgb(255, 0, 157);
-    padding: 0.4rem;
-    border-radius: 1rem;
+#input {
+  justify-content: center;
+  margin-top: 10rem;
+  outline: none;
+  border: 2px solid rgb(255, 0, 157);
+  padding: 0.4rem;
+  border-radius: 1rem;
 }
-#btn{
-    background: #ff0095;
-    border: 2px solid #ff0095;
-    border-radius: 0.2rem;
-    cursor: pointer;
+#btn {
+  background: #ff0095;
+  border: 2px solid #ff0095;
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
-#btn:hover{
-    background: #ff009589;
+#btn:hover {
+  background: #ff009589;
 }

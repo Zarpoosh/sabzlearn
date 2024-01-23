@@ -60,7 +60,8 @@ body {
   align-items: center;
   position: relative;
   background-color: #fff;
-  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+  box-shadow:
+    rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
     rgba(15, 15, 15, 0.1) 0px 2px 4px;
   border-radius: 4px;
   padding: 0.5rem 1rem;

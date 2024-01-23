@@ -1,4 +1,7 @@
-setTimeout(function(num){
-    alert(num)
-} ,5000 , 10)
-
+setTimeout(
+  function (num) {
+    alert(num);
+  },
+  5000,
+  10,
+);

@@ -12,7 +12,6 @@
 //   i++;
 // }
 
-
 // calculate the average of 3 numbers
 // var number = number;
 // sum = 0;

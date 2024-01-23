@@ -3,4 +3,4 @@
 var num1 = prompt("enter the num1:");
 var num2 = prompt("enter the num2:");
 
-eval(num1)
+eval(num1);

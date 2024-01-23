@@ -30,9 +30,8 @@ function firstLog() {
 function secondLog(callback) {
   setTimeout(function () {
     console.log(3);
-    callback()
+    callback();
   }, 5000);
-
 }
 
 function lastLog() {

@@ -14,7 +14,6 @@ console.log(Items);
 let firstListItem = document.querySelector(".list-item");
 console.log(firstListItem);
 
-
 // all elements
 let elements = document.querySelectorAll(".list-item");
 console.log(elements);

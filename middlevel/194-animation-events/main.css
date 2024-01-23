@@ -1,19 +1,20 @@
-div{
-    width: 600px;
-    height: 120px;
-    background: lightblue;
-    font-size: 22px;
-    padding: 10px ;
-    text-align: center;
-    font-weight: bold;
-    margin: 30px;
-    position: relative;
+div {
+  width: 600px;
+  height: 120px;
+  background: lightblue;
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+  position: relative;
 }
 
 @keyframes move {
-    from{
-        top:0px
-    }to{
-        top: 180px;
-    }
+  from {
+    top: 0px;
+  }
+  to {
+    top: 180px;
+  }
 }

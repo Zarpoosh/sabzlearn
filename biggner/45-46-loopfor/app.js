@@ -5,5 +5,5 @@
 
 var username = "minoo zarpoosh";
 for (var i = 0; i < username.length; i++) {
-  console.log(i ,username[i]);
+  console.log(i, username[i]);
 }

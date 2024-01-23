@@ -1,17 +1,15 @@
 // ecent capturing
 
-const divElems=document.querySelectorAll("div")
+const divElems = document.querySelectorAll("div");
 console.log(divElems);
 
-
 //! event bubbling
-divElems.forEach(function(div, index){
-    div.addEventListener("click" ,function(event){
-        
-        event.stopPropagation();
+divElems.forEach(function (div, index) {
+  div.addEventListener("click", function (event) {
+    event.stopPropagation();
 
-        console.log("div  "+ (index + 1));
-        //TODO use event.target to change sametag color
-        event.target.style.backgroundColor = "green";
-    })
-})
+    console.log("div  " + (index + 1));
+    //TODO use event.target to change sametag color
+    event.target.style.backgroundColor = "green";
+  });
+});

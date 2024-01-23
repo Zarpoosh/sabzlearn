@@ -10,6 +10,6 @@ let userNameInput = document.getElementById("input");
 
 ///////////////////////////////////////////////////
 
-userNameInput.userType = "admin";    //its a property  not attribute
+userNameInput.userType = "admin"; //its a property  not attribute
 console.log(userNameInput.userType);
-console.log(userNameInput.getAttribute("userType"));  // دسترسی به تمام اتریبیوت های صفحه html
+console.log(userNameInput.getAttribute("userType")); // دسترسی به تمام اتریبیوت های صفحه html

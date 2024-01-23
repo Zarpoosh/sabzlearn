@@ -1,4 +1,4 @@
-function loadHandler(){
-    console.log("لود شد")
+function loadHandler() {
+  console.log("لود شد");
 }
-window.addEventListener("load" ,  loadHandler)
+window.addEventListener("load", loadHandler);

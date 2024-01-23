@@ -32,7 +32,7 @@ if (isinshop == true) {
   });
 
   console.log(userbasket);
-  alert("total price "+ sum);
+  alert("total price " + sum);
 } else {
   console.log("isnt there ");
 }

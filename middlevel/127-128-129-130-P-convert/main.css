@@ -1,6 +1,6 @@
-body{
-    text-align: center;
-    justify-content: center;
+body {
+  text-align: center;
+  justify-content: center;
 }
 
 .content {
@@ -8,27 +8,27 @@ body{
   display: flex;
   flex-direction: column;
 }
-button{
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    padding: 0.3rem;
-    background-color: rgba(0, 0, 255, 0.719);
-    color: aliceblue;
-    border: 2px solid blue;
-    border-radius: 5px;
-    margin-right: 10px;
-    cursor: pointer;
+button {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 255, 0.719);
+  color: aliceblue;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
 }
-button:hover{
-    background-color: rgba(0, 0, 255, 0.507);
+button:hover {
+  background-color: rgba(0, 0, 255, 0.507);
 }
-input{
-    width: 50%;
-    margin: auto;
-    padding: 0.3rem;
-    border: none;
-    border-bottom: 2px solid blue;
-    border-radius: 5px;
-    outline: none;
+input {
+  width: 50%;
+  margin: auto;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 2px solid blue;
+  border-radius: 5px;
+  outline: none;
 }

@@ -62,7 +62,8 @@ header {
   top: 5px;
   left: 5px;
   transition: 0.3s;
-  box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+  box-shadow:
+    inset 4px 4px 4px rgb(255, 255, 255),
     inset -4px -4px 4px rgb(195 193 198 / 90%);
 }
 

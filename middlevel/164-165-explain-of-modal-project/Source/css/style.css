@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background: rgba(19, 19, 23, 0.9);
 }
-section{
+section {
   background-image: url("../images/modal-background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ section{
   width: 100%;
   /* filter: blur(6px); */
 }
-.center{
+.center {
   color: white;
   height: 100vh;
   display: flex;
@@ -22,14 +22,14 @@ section{
   align-items: center;
   flex-direction: column;
 }
-h1{
+h1 {
   text-align: center;
   font-size: 50px;
   font-family: sans-serif;
   margin: 40px;
   text-transform: capitalize;
 }
-button{
+button {
   margin: 0 auto;
   height: 60px;
   width: 500px;
@@ -41,7 +41,7 @@ button{
   cursor: pointer;
 }
 
-.modal-parent{
+.modal-parent {
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ button{
   width: 100%;
   display: none;
 }
-.modal{
+.modal {
   background: white;
   width: 70%;
   padding: 30px;
@@ -64,21 +64,20 @@ button{
   animation: 0.5s drop;
 }
 @keyframes drop {
-  0%{
+  0% {
     top: -100px;
   }
-  100%{
+  100% {
     top: 50%;
   }
 }
-.X{
+.X {
   position: absolute;
   right: 20px;
   top: 5px;
   font-size: 40px;
   cursor: pointer;
-
 }
-section{
+section {
   transition: 2s;
 }

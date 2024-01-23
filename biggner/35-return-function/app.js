@@ -7,7 +7,6 @@
 // var sumResult = sumNumbers(3, 4);
 // alert("sumResult: " + sumResult);
 
-
 /////////////////////////////////////////
 // Each function has only one return
 

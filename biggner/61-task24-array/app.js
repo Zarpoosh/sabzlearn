@@ -5,7 +5,7 @@ var sum = 0;
 
 while (usernumber != -1) {
   usernumber = Number(
-    prompt("enter the number : \n enter -1 if you dont enter any number .")
+    prompt("enter the number : \n enter -1 if you dont enter any number ."),
   );
   if ((usernumber = !-1)) {
     usernumber.push(usernumber);

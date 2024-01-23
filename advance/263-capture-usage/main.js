@@ -9,14 +9,13 @@ const ulElem = document.querySelector(".list");
 //   });
 // });
 
-ulElem.addEventListener("click", function(e){
-    // console.log(e.target.tagName);
+ulElem.addEventListener("click", function (e) {
+  // console.log(e.target.tagName);
 
-    if (e.target.tagName==="LI"){
-        e.target.remove()
-    }
-})
-
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+});
 
 inputElem.addEventListener("keypress", function (e) {
   if (e.keyCode == 13) {
@@ -25,7 +24,7 @@ inputElem.addEventListener("keypress", function (e) {
     newLanguageLi.innerHTML = e.target.value;
 
     ulElem.append(newLanguageLi);
-    console.log(listItem)
-    e.target.value=""
+    console.log(listItem);
+    e.target.value = "";
   }
 });

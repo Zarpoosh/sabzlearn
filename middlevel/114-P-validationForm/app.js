@@ -1,5 +1,4 @@
-let $= document
-
+let $ = document;
 
 let userNameInput = $.getElementById("username");
 let passwordInput = $.getElementById("password");

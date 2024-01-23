@@ -1,4 +1,4 @@
-// assignment 
+// assignment
 
 var number = 10;
 //number += 5; // number = number + 1;

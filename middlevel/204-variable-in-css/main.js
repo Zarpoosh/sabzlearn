@@ -1,10 +1,8 @@
-let btn=document.querySelector("button")
+let btn = document.querySelector("button");
 
-
-
-function changeColor(){
-    document.documentElement.style.setProperty("--test-color" , "blue")
-    console.log(document.documentElement.style.getPropertyValue("--test-color"));
+function changeColor() {
+  document.documentElement.style.setProperty("--test-color", "blue");
+  console.log(document.documentElement.style.getPropertyValue("--test-color"));
 }
 
-btn.addEventListener("click" , changeColor)
+btn.addEventListener("click", changeColor);

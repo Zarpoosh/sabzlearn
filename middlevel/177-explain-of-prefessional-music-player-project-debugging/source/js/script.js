@@ -1,4 +1,4 @@
-﻿const  $=document;
+﻿const $ = document;
 const image = $.querySelector("#cover");
 const title = $.getElementById("title");
 const artist = $.getElementById("artist");
@@ -15,8 +15,7 @@ const background = $.getElementById("background");
 // Music
 const songs = [
   {
-    path:
-      "media/html.m4a",
+    path: "media/html.m4a",
     displayName: "Html Padcast",
     artist: "Ozbi",
     cover:
@@ -29,8 +28,7 @@ const songs = [
     cover: "images/peakpx.jpg",
   },
   {
-    path:
-      "media/bazar.m4a",
+    path: "media/bazar.m4a",
     displayName: "Earn",
     artist: "Linkin Park",
     cover:
@@ -60,11 +58,11 @@ function pauseSong() {
 // Play or Pause Event Listener
 playBtn.addEventListener("click", function () {
   if (isPlaying) {
-    pauseSong()
+    pauseSong();
   } else {
-    playSong()
+    playSong();
   }
-})
+});
 
 // Update DOM
 function loadSong(song) {
@@ -90,7 +88,7 @@ let songIndex = 0;
 // Previous Song
 function prevSong() {
   songIndex--;
-  if (songIndex< 0) {
+  if (songIndex < 0) {
     songIndex = songs.length - 1;
   }
   loadSong(songs[songIndex]);

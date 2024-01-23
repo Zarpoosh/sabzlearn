@@ -8,14 +8,11 @@
 
 ////////////////////////////////////////////////////
 
-showValue()
+showValue();
 // function showValue(){
 //     console.log("minoo")
 // }        // این توابع hoisting میشن
 
-
-
 // var showValue=function(){
 //     console.log("object")
 // }        //توابعی که داخل متغییر ذخبره میشن hoist نمیشن
-

@@ -2,12 +2,11 @@
 
 var isLogin = true;
 
-if(!isLogin){
-    alert("use login")
-}else{
-    alert("not logi")
+if (!isLogin) {
+  alert("use login");
+} else {
+  alert("not logi");
 }
 
-
 //برای switchcase حتما default بنویس
-//متغیر رو داخل for تعریف نکن چون ممکنه بینهایت بار تکرار شه 
+//متغیر رو داخل for تعریف نکن چون ممکنه بینهایت بار تکرار شه

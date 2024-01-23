@@ -5,10 +5,10 @@
 
 // let number=346
 
-function showNumber(){
-    let number=18
+function showNumber() {
+  let number = 18;
 
-    console.log("in function : ",number)
+  console.log("in function : ", number);
 }
-showNumber()
-console.log("out function : ",number)
+showNumber();
+console.log("out function : ", number);

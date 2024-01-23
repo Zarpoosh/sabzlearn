@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(to top, #56e2d7 0%, #58cff1 100%);
 }
-.wrapper{
+.wrapper {
   background: #fff;
   padding: 20px;
   width: 450px;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-.wrapper form{
+.wrapper form {
   height: 55px;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: space-between;
 }
-form i{
+form i {
   position: absolute;
   width: 55px;
   text-align: center;
@@ -34,10 +34,10 @@ form i{
   color: #c4c4c4;
   pointer-events: none;
 }
-form input:valid ~ i{
+form input:valid ~ i {
   color: #58cff1;
 }
-form input{
+form input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -48,18 +48,18 @@ form input{
   border-radius: 5px;
   transition: all 0.1s ease;
 }
-form input::selection{
+form input::selection {
   color: #fff;
-  background: #58cff1;	
+  background: #58cff1;
 }
 form input:focus,
-form input:valid{
+form input:valid {
   border-color: #58cff1;
 }
-form input::placeholder{
+form input::placeholder {
   color: #c4c4c4;
 }
-form .counter{
+form .counter {
   position: absolute;
   right: 3px;
   width: 55px;
@@ -69,7 +69,7 @@ form .counter{
   border-left: 1px solid #d8d8d8;
   pointer-events: none;
 }
-form input:valid ~ .counter{
+form input:valid ~ .counter {
   color: #58cff1;
   border-color: #58cff1;
 }

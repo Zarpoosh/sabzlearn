@@ -1,16 +1,15 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
 }
-h1{
-    padding: 20px;
+h1 {
+  padding: 20px;
 }
-.online{
-    background-color: rgb(60, 255, 0);
+.online {
+  background-color: rgb(60, 255, 0);
 }
-.offline{
-    background: rgb(255, 0, 0);
+.offline {
+  background: rgb(255, 0, 0);
 }

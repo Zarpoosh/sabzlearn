@@ -20,4 +20,4 @@ userbasket.forEach(function (product) {
   sum = sum + product.price;
 });
 var totalPrice = sum + postCost;
-console.log("totalPrice" ,  totalPrice);
+console.log("totalPrice", totalPrice);

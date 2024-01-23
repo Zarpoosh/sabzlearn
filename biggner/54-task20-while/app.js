@@ -1,4 +1,4 @@
-// Plus the number of digits in the number. 
+// Plus the number of digits in the number.
 // write the number of digits in the number.
 
 var usernumber = Number(prompt("enter your number : ", 0));

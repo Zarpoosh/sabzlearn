@@ -2,7 +2,7 @@ var number = Number(prompt("enter your number:"));
 var conter = 0;
 
 if (number == 0) {
-  conter=1;
+  conter = 1;
 } else {
   for (var i = 0; number / 10 != 0; i++) {
     conter++;

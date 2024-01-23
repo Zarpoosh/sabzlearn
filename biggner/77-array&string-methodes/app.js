@@ -8,5 +8,4 @@ console.log(scors.join("/")); //فاصله گذاری میکنه
 console.log(scors.reverse()); //معکوس میکنه
 
 var userName = "minoo/zarpoosh/kimia";
-console.log(userName.split("/"));   //رشته رو از هر جا که بگی به آرایه تبدیل میکنه و برمیگردونه
-
+console.log(userName.split("/")); //رشته رو از هر جا که بگی به آرایه تبدیل میکنه و برمیگردونه

@@ -5,5 +5,5 @@ users.forEach(function (users) {
 
 var scors = [12, 34, 46, 87, 69];
 scors.forEach(function (number) {
-  console.log(number *2);
+  console.log(number * 2);
 });

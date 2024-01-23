@@ -21,7 +21,6 @@ function addNewLi() {
 
   //   console.log(newTag);
 
-  
   let appendResult = ulElem.append(newTag);
   let appendResult2 = ulElem.appendChild(newTag);
   console.log(appendResult, appendResult2);

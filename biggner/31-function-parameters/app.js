@@ -4,8 +4,6 @@
 // }
 // showText("minoo zarpoosh :)");
 
-
-
 function showNumber(a, b) {
   alert("a :" + a + "   " + "b: " + b);
 }

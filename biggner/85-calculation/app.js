@@ -1,7 +1,7 @@
 var num1 = prompt("enter your first number : ");
 var num2 = prompt("enter your second number :");
 var userOperator = prompt(
-  "choose your operator : \n 1. + \n 2. - \n 3. * \n 4. % \n 5. ** "
+  "choose your operator : \n 1. + \n 2. - \n 3. * \n 4. % \n 5. ** ",
 );
 
 if (userOperator == "1") {

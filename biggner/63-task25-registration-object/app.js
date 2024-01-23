@@ -1,6 +1,5 @@
 // registeration with object and array and  if else if
 
-
 var users = [
   { id: 1, name: "minoo", family: "zarpoosh", age: 20 },
   { id: 2, name: "mohamad", family: "rahgoshyi", age: 30 },

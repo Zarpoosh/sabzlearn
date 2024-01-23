@@ -7,5 +7,5 @@ var str3 = "4";
 
 console.log(num2 == num3);
 console.log(num2 * num3 == num1);
-console.log(str2 == num2);  // only value conditions => true
+console.log(str2 == num2); // only value conditions => true
 console.log(num3 === str3); //false => value and typeof conditions
