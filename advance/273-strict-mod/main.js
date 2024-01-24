@@ -1,5 +1,5 @@
-// strict mod ---->"use strict"
-"use strict";
+// strict mod ---->"use strict"  in ES5
+// "use strict";
 
 //*--------------------- example 1 -----------------
 // number = 12;
@@ -7,7 +7,7 @@
 
 //*--------------------- example 2 -----------------
 // function showValue(a,a) {
-  
+
 // }
 //*--------------------- example 3 -----------------
 //! نمیتونیم ولیو های readonly رو مقدار دهی کنیم
@@ -24,3 +24,13 @@
 //! cant use delete the variables in strict mod
 // let username="minoo"
 // delete username
+
+// ? ----------------- in function ----------------------
+num = 2;
+console.log(num);
+function showValue() {
+  "use strict";
+  numberVal = 54;
+  console.log(numberVal);
+}
+showValue();
