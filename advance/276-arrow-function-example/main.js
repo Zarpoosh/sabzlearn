@@ -8,7 +8,7 @@ let mapData = (numbers = numbers.map((num) => num * 2));
 console.log(mapData);
 
 
-// ----------------------------arrow func in addEventListener-------------------------
+// ----------------------------arrow func in addEventListener  arrow function-------------------------
 
 const btn=document.querySelector('#btn');
 btn.addEventListener("click", (e) =>{
