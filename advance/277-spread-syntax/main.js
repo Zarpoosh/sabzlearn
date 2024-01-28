@@ -24,12 +24,24 @@ copyNumbers.push(29);
 // console.log("number :", numbers)
 // console.log("number: ", copyNumbers)
 
-let nums1 = [1, 2, 3, 4];
-let nums2 = [5, 6, 7, 8];
-let allNumbers = [...nums1, ...nums2 , 54,9868];
-console.log(allNumbers);
+// let nums1 = [1, 2, 3, 4];
+// let nums2 = [5, 6, 7, 8];
+// let allNumbers = [...nums1, ...nums2 , 54,9868];
+// console.log(allNumbers);
 
 //------------------------------------------------------
-function myFunction(x, y, z) {}
-const args = [0, 1, 2];
-myFunction(...args);
+// function myFunction(x, y, z) {}
+// const args = [0, 1, 2];
+// myFunction(...args);
+//-----------------------------------------------------
+
+
+const a = [[1], [2], [3]];
+const b = [...a];
+
+b.shift().shift();
+// 1
+
+// Oh no! Now array 'a' is affected as well:
+console.log(a);
+// [[], [2], [3]]
