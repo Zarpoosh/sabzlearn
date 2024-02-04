@@ -1,3 +1,23 @@
 {
-  "cSpell.words": ["Livescript"]
+  "cSpell.words": ["Livescript"],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#50aa72",
+    "activityBar.background": "#50aa72",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#7452ad",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#50aa72",
+    "statusBar.background": "#40875b",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#50aa72",
+    "statusBarItem.remoteBackground": "#40875b",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#40875b",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#40875b99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#40875b"
 }
