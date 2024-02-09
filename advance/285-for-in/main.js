@@ -1,4 +1,4 @@
-// for in 
+// for in
 
 let user = {
   id: 1,
@@ -7,5 +7,5 @@ let user = {
 };
 
 for (let item in user) {
-  console.log(`user.${item}: ${user[item]}`)
+  console.log(`user.${item}: ${user[item]}`);
 }

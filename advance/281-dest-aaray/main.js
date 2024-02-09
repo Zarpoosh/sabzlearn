@@ -23,7 +23,6 @@ console.log(num3);
 /////////////////////////////////////let user = [1, "minoo", 20];
 // let [userID, userName, userAga, userCity="ardabil"] = user;
 
-
 // console.log(userID)
 // console.log(userName)
 // console.log(userAga)

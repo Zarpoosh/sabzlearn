@@ -6,7 +6,7 @@ const users = [
   { id: 3, name: "kimia", age: 18 },
 ];
 
-export let usersCount=users.length;
+export let usersCount = users.length;
 
 export function isLogin(userId) {
   let isUserInUsersoosh = users.some((user) => user.id == userId);
@@ -15,6 +15,8 @@ export function isLogin(userId) {
 }
 
 export function userRegister(name, age) {
+ /* The code is creating a new object called `newUserObject` with three properties: `id`, `name`, and
+ `age`. */
   let newUserObject = {
     id: Math.floor(Math.random() * 100),
     name: name,

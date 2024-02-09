@@ -1,10 +1,9 @@
-// string paddding 
+// string paddding
 
-let userName="minoo"
-
+let userName = "minoo";
 
 //default is space
-console.log(userName.padStart(6, "*"))
+console.log(userName.padStart(6, "*"));
 
 //////////////////////////////////////////////////////
 // let size="8"
@@ -12,9 +11,9 @@ console.log(userName.padStart(6, "*"))
 
 ///////////////////////////////////////////////////
 
-let phonNumber="09940002432"
+let phonNumber = "09940002432";
 
-let last4Digits=phonNumber.slice(-4)
+let last4Digits = phonNumber.slice(-4);
 // console.log(last4Digits)
-let finalNumber=last4Digits.padStart(phonNumber.length, "*")
-console.log(finalNumber)
+let finalNumber = last4Digits.padStart(phonNumber.length, "*");
+console.log(finalNumber);

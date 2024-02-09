@@ -31,15 +31,14 @@ let user = {
 
 // console.log(sum(1, 2, 3, 4));
 
-
 // /////////////////////////////////////////////////////////////////////
 
-let liElem=document.getElementsByTagName("li");
+let liElem = document.getElementsByTagName("li");
 
-// liElem.forEch()   //! its not itreable شبه  آرایه است 
+// liElem.forEch()   //! its not itreable شبه  آرایه است
 
-for (let li of liElem){
-    console.log(li)
-    li.addEventListener("click", e=>e.target.remove())
+for (let li of liElem) {
+  console.log(li);
+  li.addEventListener("click", (e) => e.target.remove());
 }
-console.log(liElem)
+console.log(liElem);
