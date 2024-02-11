@@ -11,3 +11,8 @@
 // console.log(userRegister(newUsername, newUserage));
 
 // //! ITS TEST COMMENT
+//TODO ////////////////////////////////////////////////////////////////////
+
+import * as func from "./func.js";
+console.log(func)
+console.log(func.isLogin(99));

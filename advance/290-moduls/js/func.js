@@ -6,15 +6,15 @@ const users = [
   { id: 3, name: "kimia", age: 18 },
 ];
 
-export let usersCount = users.length;
+ let usersCount = users.length;
 
-export function isLogin(userId) {
+ function isLogin(userId) {
   let isUserInUsersoosh = users.some((user) => user.id == userId);
 
   return isUserInUsersoosh;
 }
 
-export function userRegister(name, age) {
+ function userRegister(name, age) {
  /* The code is creating a new object called `newUserObject` with three properties: `id`, `name`, and
  `age`. */
   let newUserObject = {
@@ -28,4 +28,6 @@ export function userRegister(name, age) {
 }
 
 // ! test comment
-// export { isLogin , userRegister, usersCount};
+export { isLogin , userRegister, usersCount};
+// * just one export default in one file.js
+ 
