@@ -42,3 +42,18 @@ for (let li of liElem) {
   li.addEventListener("click", (e) => e.target.remove());
 }
 console.log(liElem);
+
+
+///////////////////////////////////////////////////////
+
+
+let divElem = document.getElementsByTagName("div");
+
+for (let div of divElem) {
+  div.addEventListener("click", function () {
+    for (let otherDiv of divElem) {
+      otherDiv.style.backgroundColor = "white";
+    }
+    this.style.backgroundColor = " green";
+  });
+}
