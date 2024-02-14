@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   //TODO  اگه دیتا بیس با موفقیت ساخته بشه
   dataBaseOpenRequest.addEventListener("success", (event) => {
     db = event.target.result;
-    getUsers()
+    getUsers();
     console.log("success", event.target.result);
   });
 
@@ -57,8 +57,8 @@ registerForm.addEventListener("submit", (event) => {
     email: emailInput.value,
   };
 
-  let tx=createTX("users", "readwrite");
- 
+  let tx = createTX("users", "readwrite");
+
   tx.addEventListener("complete", (event) => {
     console.warn("txsuccess", event);
   });
@@ -74,7 +74,7 @@ registerForm.addEventListener("submit", (event) => {
     console.warn("requestsuccess", event);
     clearInput();
 
-    getUsers()
+    getUsers();
   });
 });
 function clearInput() {
@@ -84,7 +84,7 @@ function clearInput() {
 }
 
 function getUsers() {
- let tx=createTX("users", "readonly");
+  let tx = createTX("users", "readonly");
 
   tx.addEventListener("complete", (event) => {
     console.warn("txsuccess", event);
@@ -100,36 +100,35 @@ function getUsers() {
   request.addEventListener("success", (event) => {
     console.warn("Get request success", event);
 
-    let allUsers=event.target.result
+    let allUsers = event.target.result;
 
-    usersTableElem.innerHTML=` <tr>
+    usersTableElem.innerHTML = ` <tr>
                                 <td>ID</td>
                                 <td>Name</td>
                                 <td>password</td>
                                 <td>email</td>
                                 <td>Action</td>
-                              </tr>`
-    usersTableElem.innerHTML+= allUsers.map(user=>{
-      return `<tr>
+                              </tr>`;
+    usersTableElem.innerHTML += allUsers
+      .map((user) => {
+        return `<tr>
                 <th>${user.userId}</th>
                 <th>${user.name}</th>
                 <th>${user.password}</th>
                 <th>${user.email}</th>
                 <th><a href="#" onclick="removeUser(${user.userId})">Remove</a></th>
-            <tr>`
-    }).join("")
-    console.log(userTemplateArray)
+            <tr>`;
+      })
+      .join("");
+    console.log(userTemplateArray);
   });
 }
 
+function removeUser(userId) {
+  // event.preventDefault()
+  console.log("userId");
 
-
-function removeUser(userId){
-  event.preventDefault()
-  console.log("userId")
-  
-  let tx=createTX("users", "readwrite")
-
+  let tx = createTX("users", "readwrite");
 
   tx.addEventListener("complete", (event) => {
     console.warn("delete tx", event);
@@ -138,30 +137,24 @@ function removeUser(userId){
   let store = tx.objectStore("users");
   let request = store.delete(userId);
 
-
-
   request.addEventListener("error", (err) => {
     console.warn(" delete requesterror", err);
   });
 
   request.addEventListener("success", (event) => {
     console.warn("delete requestsuccess", event);
-    clearInput();
-
-    getUsers()
+    getUsers();
   });
 }
 
-
-function createTX(storename , mode){
-  let tx = db.transaction(storename,  mode);
+function createTX(storename, mode) {
+  let tx = db.transaction(storename, mode);
 
   tx.addEventListener("error", (err) => {
     console.warn("txerror", err);
   });
 
-  return tx
+  return tx;
 }
 
 //?  DRY  ==> Don't Repeat You'r self!
-
