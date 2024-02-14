@@ -107,6 +107,7 @@ function getUsers() {
                                 <td>Name</td>
                                 <td>password</td>
                                 <td>email</td>
+                                <td>Action</td>
                               </tr>`
     usersTableElem.innerHTML+= allUsers.map(user=>{
       return `<tr>
@@ -114,11 +115,43 @@ function getUsers() {
                 <th>${user.name}</th>
                 <th>${user.password}</th>
                 <th>${user.email}</th>
+                <th><a href="#" onclick="removeUser(${user.userId})">Remove</a></th>
             <tr>`
     }).join("")
     console.log(userTemplateArray)
   });
 }
+
+
+
+function removeUser(userId){
+  event.preventDefault()
+  console.log("userId")
+  
+  let tx=createTX("users", "readwrite")
+
+
+  tx.addEventListener("complete", (event) => {
+    console.warn("delete tx", event);
+  });
+
+  let store = tx.objectStore("users");
+  let request = store.delete(userId);
+
+
+
+  request.addEventListener("error", (err) => {
+    console.warn(" delete requesterror", err);
+  });
+
+  request.addEventListener("success", (event) => {
+    console.warn("delete requestsuccess", event);
+    clearInput();
+
+    getUsers()
+  });
+}
+
 
 function createTX(storename , mode){
   let tx = db.transaction(storename,  mode);
@@ -131,3 +164,4 @@ function createTX(storename , mode){
 }
 
 //?  DRY  ==> Don't Repeat You'r self!
+
