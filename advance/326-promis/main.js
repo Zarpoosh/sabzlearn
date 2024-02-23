@@ -11,6 +11,7 @@ function addBook(name, price, callback) {
     name,
     price,
   };
+  
 
   return new Promise((resolve, reject) => {
     setTimeout(function () {
