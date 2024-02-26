@@ -30,5 +30,7 @@ const showData = (response) => {
 
 
 
+
+
 fetchData()
   .then(parsData)
