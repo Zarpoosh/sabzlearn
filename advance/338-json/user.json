@@ -1,0 +1,24 @@
+
+[
+    {
+        "id":1,
+        "username":"minoo",
+        "password":12212
+    },
+    {
+        "id":2,
+        "username":"ali",
+        "password":67347
+    },
+    {
+        "id":3,
+        "username":"mohammad",
+        "password":54342
+    },
+    {
+        "id":4,
+        "username":"danial",
+        "password":2424
+    }
+]
+
