@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
 })
 
 function getAllUsers(){
+    console.log("fetch users");
     fetch('http://localhost:3000/api/users')
     .then(res => res.json())
     .then(data => {
@@ -47,6 +48,9 @@ function openDeleteModal(){
 function closeModal(){
     deleteModal.classList.remove("visible")
 }
+function closeEditModal(){
+    editModal.classList.remove("visible")
+}
 
 
 function openEditModal(){
@@ -55,13 +59,14 @@ function openEditModal(){
 }
 
 
-function updateUser(){  //put
+async function updateUser(){  //put
     let userData={
         firstname :firstname.value, 
         lastname :lastname.value,
         password :password.value
     }
-    fetch(`https://localhost:3000/api/users/${userID}`, {
+    //!   صبر میکنه این خطاجرا شه بعد بره خط های بعدی
+    await fetch(`http://localhost:3000/api/users/${userID}`, {
         method:"PUT", 
         headers:{
             "Content-type": 'application/json'
@@ -71,7 +76,7 @@ function updateUser(){  //put
     .then(res=>console.log(res))
 }
 function deleteUser(){
-    fetch(`https://localhost:3000/api/users/${userID}` , {  //get
+    fetch(`http://localhost:3000/api/users/${userID}` , {  //get
         method:"DELETE", 
     })  
     .then(res=>res.json())
@@ -79,4 +84,8 @@ function deleteUser(){
 
     getAllUsers()
     closeModal()
+}
+
+function preventDefault(e) {
+    e.preventDefault()
 }
