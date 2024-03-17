@@ -1,43 +1,41 @@
+const $ = document
 
-const $=document;
+const firstname = $.querySelector('.firstname')
+const lastname = $.querySelector('.lastname')
+const password = $.querySelector('.password')
+const form = $.querySelector('#form')
 
-const firstname=$.querySelector(".firstname")
-const lastname=$.querySelector(".lastname")
-const password=$.querySelector(".password")
-const form=$.querySelector("#form")
+form.addEventListener('submit', (e) => {
 
-
-form.addEventListener("submit", (e)=>{
     e.preventDefault()
-    console.log("submit");
-
-    let userData={
-        firstname:firstname.value,
-        lastname:lastname.value,
-        password:password.value,
+    
+    let userData = {
+        firstname: firstname.value,
+        lastname: lastname.value,
+        password: password.value,
     }
 
-    //POST
-    fetch("https://sabzlarn-default-rtdb.firebaseio.com/users.json", {
-        method: "POST",
+    // POST Request
+
+    fetch('https://new-pro-9ac4d-default-rtdb.firebaseio.com/users.json', {
+        method: 'POST',
         headers: {
-            "Content-type": "application/json"
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(userData)
     })
-    .then(res=>{
-        console.log("successfully :))", res)
+    .then(res => {
+        console.log(res);
         clearData()
     })
-    .catch(err=>console.log("unsccessfully :((", err))
+    .catch(err => console.log(err))
 
-  
 })
 
+function clearData () {
 
+    firstname.value = ''
+    lastname.value = ''
+    password.value = ''
 
-function clearData() {
-    firstname.value=""
-    lastname.value=""
-    password.value=""
 }
