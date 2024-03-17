@@ -1,5 +1,7 @@
 const userContainer = document.querySelector("#wrap-users");
 const deleteModal = document.querySelector("#delete-modal");
+const editModal = document.querySelector("#edit-modal");
+
 
 let userID = null;
 
@@ -30,7 +32,7 @@ function getAllUsers() {
             </div>
             <div class="btn-groups-column">
                 <button class="delete-user-btn" onclick="openDeleteModal(${user[0]})">delete</button>
-                <button class="edit-user-btn">edit</button>
+                <button class="edit-user-btn" onclick="openeditModal(${user[0]})">edit</button>
             </div>
             </div>
             `
@@ -45,10 +47,25 @@ function openDeleteModal() {
   console.log(userID);
   deleteModal.classList.add("visible");
 }
+function openeditModal() {
+  userID = id;
+  console.log(userID);
+  deleteModal.classList.add("visible");
+}
 
+function closeeditModal() {
+  deleteModal.classList.remove("visible");
+}
 function closeDeleteModal() {
   deleteModal.classList.remove("visible");
 }
+async function updateUser(){
+
+
+
+  closeeditModal()
+}
+
 async function deleteUser() {
   //uesr remove
   await fetch(
