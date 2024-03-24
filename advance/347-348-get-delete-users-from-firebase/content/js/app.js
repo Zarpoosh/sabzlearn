@@ -2,7 +2,6 @@ const userContainer = document.querySelector("#wrap-users");
 const deleteModal = document.querySelector("#delete-modal");
 const editModal = document.querySelector("#edit-modal");
 
-
 let userID = null;
 
 window.addEventListener("load", () => {
@@ -14,8 +13,8 @@ function getAllUsers() {
   fetch("https://sabzlarn-default-rtdb.firebaseio.com/user.json")
     .then((res) => res.json())
     .then((data) => {
-        let usersData = Object.entries(data);
-        userContainer.innerHTML = "";
+      let usersData = Object.entries(data);
+      userContainer.innerHTML = "";
       usersData.forEach((user) => {
         console.log(user);
 
@@ -59,11 +58,24 @@ function closeeditModal() {
 function closeDeleteModal() {
   deleteModal.classList.remove("visible");
 }
-async function updateUser(){
+async function updateUser() {
+  //update user
+  const userNewData = {
+    firstname: firstname.value,
+    lastname: lastname.value,
+    password: password.value,
+  };
 
-
-
-  closeeditModal()
+  fetch(`https://sabzlarn-default-rtdb.firebaseio.com/user/${userID}.json`, {
+    method: "PUT",
+    header: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  }).then((res) => {
+    console.log(res);
+    closeeditModal();
+  });
 }
 
 async function deleteUser() {
@@ -79,6 +91,3 @@ async function deleteUser() {
     closeDeleteModal();
   });
 }
-
-
-
