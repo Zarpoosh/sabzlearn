@@ -71,7 +71,7 @@ async function updateUser() {
     header: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify(userData),
+    body: JSON.stringify(userNewData),
   }).then((res) => {
     console.log(res);
     closeeditModal();
