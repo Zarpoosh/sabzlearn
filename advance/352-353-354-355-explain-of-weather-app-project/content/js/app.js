@@ -1,27 +1,3 @@
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
 // f0e86320b328f367db80dcb46f6cce3f
 // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
@@ -56,6 +32,43 @@ function fetchData() {
 function showData(data) {
   city.innerHTML = `${data.name} , ${data.sys.country}`;
   tempt.innerHTML = `${Math.floor(-273.15 + data.main.temp)}°c`;
-  hiLow.innerHTML = `${Math.floor(-273.15 + data.main.temp_max)} / ${Math.floor(-273.15 + data.main.temp_min)}`;
-  wethear.innerHTML=`${data.weather[0].main}`
+  hiLow.innerHTML = `${Math.floor(-273.15 + data.main.temp_max)} / ${Math.floor(
+    -273.15 + data.main.temp_min
+  )}`;
+  wethear.innerHTML = `${data.weather[0].main}`;
+  date.innerHTML = showDate();
+}
+
+function showDate() {
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let now = new Date();
+  let day = days[now.getDay()];
+  let month = months[now.getMonth()];
+  let year = now.getYear();
+  let date=now.getDate()
+
+  return `${day}/${date}/${month}/${year}`
 }
