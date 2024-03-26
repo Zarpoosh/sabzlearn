@@ -5,6 +5,7 @@ const serachBtn = $.querySelector("button");
 const word = $.querySelector(".word");
 const type = $.querySelector(".type");
 const meaning = $.querySelector(".meaning");
+const speaker=$.querySelector(".speaker");
 
 inputSearch.addEventListener("keypress", (e) => {
   console.log("entered");
@@ -40,4 +41,8 @@ function showData(data) {
   word.innerHTML = `${data[0].word} `;
   type.innerHTML = `${data[0].meanings[0].partOfSpeech}  ${data[0].phonetic} `;
   meaning.innerHTML = `${data[0].meanings[0].definitions[0].definition}`;
+  speaker.addEventListener("click", ()=>{
+    console.log("cliked")
+    // data[0].meanings[0].sourceUrls[0].play()
+  })
 }
