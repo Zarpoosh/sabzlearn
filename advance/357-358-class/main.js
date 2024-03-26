@@ -12,11 +12,17 @@ class Person {
     this.address = useraddress;
   }
 
-  startDev (){
+  startDev() {
     console.log(`${this.name} start developing !`);
-  };
-  getAge(){
-    return this.age
+  }
+
+  static removeUser() {
+    //!دسترسی مستقیم به متد
+    console.log("removed !");
+  }
+
+  getAge() {
+    return this.age;
   }
 }
 
@@ -41,9 +47,8 @@ class Professor extends Person {
     this.lessone = userlessone;
     this.years = yearsofjob;
 
-
     startDev = () => {
-      console.log(super.getAge())
+      console.log(super.getAge());
       console.log(`${this.name} start teaching !`);
     };
   }
@@ -70,3 +75,6 @@ console.log(personalMohammad.job);
 //----------------------------------------
 personalMinoo.startDev();
 console.log(Person.startDev()); //!  its wrong.نمیتونم قبل ساختن یه شی به متد هاش دسترسی داشته باشیم
+//-------------------------------------------------------
+
+console.log(personalMohammad.removeUser());
