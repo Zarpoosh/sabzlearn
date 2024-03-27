@@ -78,3 +78,5 @@ console.log(Person.startDev()); //!  its wrong.نمیتونم قبل ساختن 
 //-------------------------------------------------------
 
 console.log(personalMohammad.removeUser());
+
+
