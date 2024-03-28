@@ -16,10 +16,9 @@ class TodoList {
     this.todoInput = document.querySelector("input");
     this.render(this.todos);
   }
-
+  
   render() {
     console.log("do");
-    this.todos = [];
 
     this.todosContainer.innerHTML = "";
 
@@ -38,6 +37,8 @@ class TodoList {
   addTodosToDom() {
     console.log("anjam shod!");
   }
+  this.todosContainer.innerHTML = ''
+
 
   addNewTodo(newTodoTitle) {
     console.log("newtodo title ==>", newTodoTitle);
