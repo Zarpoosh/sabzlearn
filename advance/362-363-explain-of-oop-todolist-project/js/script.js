@@ -37,7 +37,7 @@ class TodoList {
   addTodosToDom() {
     console.log("anjam shod!");
   }
-  this.todosContainer.innerHTML = ''
+  // this.todosContainer.innerHTML = ''
 
 
   addNewTodo(newTodoTitle) {
@@ -53,3 +53,5 @@ class TodoList {
 }
 
 new TodoList(document.querySelector("#todoList"));
+
+
