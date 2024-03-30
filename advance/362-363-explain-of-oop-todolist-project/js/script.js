@@ -53,5 +53,3 @@ class TodoList {
 }
 
 new TodoList(document.querySelector("#todoList"));
-
-
