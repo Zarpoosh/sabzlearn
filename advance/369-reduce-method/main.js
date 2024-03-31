@@ -9,3 +9,5 @@ number.reduce((preValue, curentValue) => {
   //   return curentValue
   return "minicode"; //1,2 |  minicode, 3 | minicode, 4 | minicode, 5 | minicode 6
 });
+
+
