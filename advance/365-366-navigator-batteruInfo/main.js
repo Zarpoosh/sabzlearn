@@ -37,7 +37,5 @@ button3.addEventListener("click", ()=>{
         batteryInfo.addEventListener("levelhange", ()=>{
             console.log("شارژ کاربر تغیر کرد");
         })
-    } else {
-        
     }
 })
