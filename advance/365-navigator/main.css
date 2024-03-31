@@ -1,0 +1,15 @@
+.wrapper{
+    background-color:red;
+    padding:5px;
+    text-align:center;
+    justify-content:center;
+    margin:auto;
+    width:10%;
+    display:flex;
+    cursor: pointer;
+
+}
+
+span{
+
+}
