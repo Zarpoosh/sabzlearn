@@ -1,0 +1,6 @@
+p::first-letter {
+/*! font-size:3rem; ======>its wrong  */
+  color: red;
+
+  initial-letter:3 2;
+}
