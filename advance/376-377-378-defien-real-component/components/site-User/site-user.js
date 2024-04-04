@@ -4,8 +4,9 @@
 const template=document.createElement("template")
 template.innerHTML=`
 <link rel="stylesheet" href="components/site-User/site-user.css" />
+  <slot name="username"></slot> 
+  <slot name="job"></slot> 
 
-<h1>minoo </h1>
 `
 
 
