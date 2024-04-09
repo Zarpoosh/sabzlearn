@@ -1,0 +1,17 @@
+body{
+    background: red;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 190px;
+    display: flex;
+}
+
+.header h2{
+    color: #fff;
+    font-weight: bold;
+}

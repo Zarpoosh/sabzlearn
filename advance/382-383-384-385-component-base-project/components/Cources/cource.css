@@ -1,0 +1,36 @@
+
+.cource-card{
+    display: flex;
+    margin: 12px;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0   1px 6px #ccc;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+.cover{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+.cover > img{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+
+.details .info{
+/* display: none; */
+}
+.details .action button{
+    border: none;
+    outline: none;
+    padding: 8px 22px;
+    background-color: rgba(111, 0, 255, 0.555);
+    color: #fff;
+    cursor: pointer;
+}
