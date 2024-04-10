@@ -1,0 +1,17 @@
+.box1{
+    background-color:red;
+    width:10rem;
+    height:10rem;
+    margin:3rem
+}
+.box2{
+    background-color:rgb(47, 0, 255);
+    width:10rem;
+    height:10rem;
+    margin:3rem
+}
+
+.container{
+border:2px solid red;
+    resize:vertical;
+}
