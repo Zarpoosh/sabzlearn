@@ -53,10 +53,15 @@ console.log("سایت لود ش !");
 
 async function runUserCodes(params) {
   
+try{
   let userInfos=await userLogin("minoo zarpoosh" ,0909)
   let userAllCourses=await userCourses(userInfos)
   let mainInfos=await mainCoursesInfo(userAllCourses[1].title)
   console.log(mainInfos)
+}catch(err){
+  console.log("error....")
+  alert("errror...")
+}
 }
 runUserCodes()
 console.log("کاربر با موفقیت لاگین شد ");
