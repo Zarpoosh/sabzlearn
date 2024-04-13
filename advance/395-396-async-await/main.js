@@ -13,10 +13,12 @@ const userCourses = (username) => {
   console.log("username: ", username)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve([
-        { id: 1, title: "js course", price: 3_000_000 },
-        { id: 1, title: "js course", price: 3_000_000 },
-      ]);
+      // resolve([
+      //   { id: 1, title: "js course", price: 3_000_000 },
+      //   { id: 1, title: "js course", price: 3_000_000 },
+      // ]);
+
+      reject("'Error :/")
     }, 3000);
   });
 };
@@ -54,7 +56,7 @@ console.log("سایت لود ش !");
 async function runUserCodes(params) {
   
 try{
-  let userInfos=await userLogin("minoo zarpoosh" ,0909)
+  let userInfos=await userLogin("minoo zarpoosh" ,1233)
   let userAllCourses=await userCourses(userInfos)
   let mainInfos=await mainCoursesInfo(userAllCourses[1].title)
   console.log(mainInfos)
@@ -65,6 +67,4 @@ try{
 }
 runUserCodes()
 console.log("کاربر با موفقیت لاگین شد ");
-
-
 
